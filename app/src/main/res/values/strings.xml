@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RecuExamen_2</string>
+    <string name="btnNuevo">Nuevo libro</string>
+    <string name="btnBasesDatos">BASES DE DATOS</string>
+    <string name="btnWebservice">WEB SERVICES</string>
+    <string name="btnMutli">MULTIMEDIA</string>
+    <string name="btnSalir">SALIR</string>
+    <string name="cmbOpciones">SPINNER</string>
+    <string name="txtcant">CANTIDAD</string>
+    <string name="txtUnidades">UNIDADES</string>
+    <string name="uniOri">UNIDADES ORIGEN</string>
+    <string name="cmbOpcionesOrigen">Spinner origen</string>
+    <string name="unides">UNIDADES DESTINO</string>
+    <string name="cmbOpcionesDestino">Spinner destino</string>
+    <string name="btncalcular">CALCULAR</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="btlistado">LISTADO LIBROS</string>
+    <string name="btncancelar">CANCELAR</string>
+    <string name="btninsertar">INSERTAR</string>
+    <string name="checkleido">LEIDO</string>
+    <string name="txtnumpag">num paginas</string>
+    <string name="txtedit">editorial</string>
+    <string name="txtIsbn">ISBN</string>
+    <string name="txtauthor">AUTOR</string>
+    <string name="txttitle">TITULO</string>
+</resources>

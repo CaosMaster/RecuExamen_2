@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:text="MENU PRINCIPAL"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btnBasesDatos"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="BASES DE DATOS"
+        android:layout_gravity="center"
+        android:onClick="datos"
+        />
+
+    <Button
+        android:id="@+id/btnWebservice"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="WEB SERVICES"
+        android:layout_gravity="center"
+        android:onClick="web"/>
+
+    <Button
+        android:id="@+id/btnMutli"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="MULLTIMEDIA"
+        android:layout_gravity="center"
+        android:onClick="multi"/>
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_height="wrap_content"
+        android:layout_width="156dp"
+        android:text="Salir"
+        android:layout_gravity="right"
+        android:layout_marginTop="250dp"
+        android:onClick="salir"/>
+
+    </LinearLayout>

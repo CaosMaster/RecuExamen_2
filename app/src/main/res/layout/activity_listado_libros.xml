@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:text="LISTADO DE LIBROS"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp" />
+
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            <RadioButton
+                android:id="@+id/radioleido"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="leido"/>
+
+                <RadioButton
+                    android:id="@+id/radioporleer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Por leer" />
+            </LinearLayout>
+           </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtpru"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp" />
+        <ListView
+            android:id="@+id/listaview"
+            android:layout_height="294dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.43" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="SALIR"
+        android:onClick="volver"
+        android:layout_gravity="right"
+        android:layout_marginTop="100dp"/>
+    </LinearLayout>

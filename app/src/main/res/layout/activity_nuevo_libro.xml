@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:text="DATOS NUEVO LIBRO"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITULO:" />
+
+        <EditText
+            android:id="@+id/txttitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtauthor"
+            android:text="AUTOR:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/txtautor"
+            android:layout_height="wrap_content"
+            android:layout_width="338dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtIsbn"
+            android:text="ISBN:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/txtisbn"
+            android:layout_height="wrap_content"
+            android:layout_width="354dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtedit"
+            android:text="EDITORIAL:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/txteditorial"
+            android:layout_height="wrap_content"
+            android:layout_width="312dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtnumpag"
+            android:text="NUM.PAGINAS:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/txtNumpaginas"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <CheckBox
+            android:id="@+id/checkleido"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="leido"
+            android:layout_marginLeft="140dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btninsertar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="INSERTAR"
+            android:onClick="insertar"
+
+            />
+
+        <Button
+            android:id="@+id/btncancelar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="CANCELAR"
+            android:onClick="cancelar"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="SALIR"
+        android:onClick="volver"
+        android:layout_gravity="right"
+        android:layout_marginTop="100dp"/>
+</LinearLayout>

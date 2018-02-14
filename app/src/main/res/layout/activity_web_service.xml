@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:text="CONVERSION DE UNIDADES
+              DE LONGITUD"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txtcant"
+            android:text="Cantidad para la conversion:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/titulo"/>
+
+        <EditText
+            android:id="@+id/txtUnidades"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/titulo"
+            android:layout_toRightOf="@id/txtcant"
+            android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/uniOri"
+        android:text="Unidad Origen:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtcant"/>
+
+    <Spinner
+        android:id="@+id/cmbOpcionesOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcant"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/uniOri"
+        />
+
+    <TextView
+        android:id="@+id/unides"
+        android:text="Unidad Destino:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/uniOri"/>
+
+    <Spinner
+        android:id="@+id/cmbOpcionesDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uniOri"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/unides"
+        />
+
+    <Button
+        android:id="@+id/btncalcular"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="CALCULAR"
+        android:layout_gravity="center"
+        android:onClick="calcular"
+        android:layout_below="@+id/unides"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/btncalcular"
+        android:background="@android:color/darker_gray"
+       />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="SALIR"
+        android:onClick="volver"
+        android:layout_gravity="right"
+        android:layout_marginTop="400dp"/>
+</RelativeLayout>
